@@ -2,7 +2,7 @@
 
 namespace BasicPipeline.Framework
 {
-    internal interface IAmADataSink<T>
+    public interface IAmADataSink<T>
     {
         void Execute(IEnumerable<T> input);
     }

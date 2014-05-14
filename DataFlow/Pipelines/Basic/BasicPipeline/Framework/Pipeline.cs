@@ -4,8 +4,18 @@ namespace BasicPipeline.Framework
 {
     internal class Pipeline<T>
     {
+        private readonly IAmADataSink<T> sink = new DataSink<T>(); 
+
+        public Pipeline(IAmADataSource<T> pump, IAmADataSink<T> sink = null)
+        {
+            Pump = pump;
+            if (sink != null)
+            {
+                this.sink = sink;
+            }
+        }
+
         public IAmADataSource<T> Pump { get; set; }
-        public IAmADataSink<T> Sink { get; set; }
 
         public void Execute()
         {
@@ -19,7 +29,7 @@ namespace BasicPipeline.Framework
             }
 
             //now when we enumerate the sink, we pull in; this is a pull based pipeline as opposed to a push based one
-            Sink.Execute(current);
+            sink.Execute(current);
         }
     }
 }

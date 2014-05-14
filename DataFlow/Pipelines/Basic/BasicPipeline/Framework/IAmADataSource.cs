@@ -2,7 +2,7 @@
 
 namespace BasicPipeline.Framework
 {
-    interface IAmADataSource<T>
+    public interface IAmADataSource<T>
     {
         IAmAFilter<T> Successor { get; set; }
         IEnumerable<T> Begin();

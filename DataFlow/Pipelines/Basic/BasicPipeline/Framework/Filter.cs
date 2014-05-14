@@ -2,7 +2,7 @@
 
 namespace BasicPipeline.Framework
 {
-    abstract class Filter<T> : IAmAFilter<T>
+    abstract public class Filter<T> : IAmAFilter<T>
     {
         public IAmAFilter<T> Successor { get; set; }
         public virtual IEnumerable<T> Execute(IEnumerable<T> input)
