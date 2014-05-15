@@ -8,7 +8,12 @@ namespace BasicPipeline
     {
         static void Main(string[] args)
         {
-            var pump = new FileDataSource(new StreamReader(@"data\MOCK_DATA.csv"));
+            var pump = new FileDataSource(new StreamReader(@"data\TestData.txt"));
+            var shifter = new CircularShifter();
+            var alphabetizer = new Alphabetizer();
+
+            pump.Successor = shifter;
+            shifter.Successor = alphabetizer;
             
             var pipeline = new Pipeline<string>(pump: pump, sink: new ConsoleWriter());
             pipeline.Execute();

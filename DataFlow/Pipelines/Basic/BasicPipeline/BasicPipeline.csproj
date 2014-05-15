@@ -36,6 +36,8 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alphabetizer.cs" />
+    <Compile Include="CircularShifter.cs" />
     <Compile Include="ConsoleWriter.cs" />
     <Compile Include="FileDataSource.cs" />
     <Compile Include="Framework\DataSink.cs" />
@@ -49,9 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="data\MOCK_DATA.csv">
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\TestData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
