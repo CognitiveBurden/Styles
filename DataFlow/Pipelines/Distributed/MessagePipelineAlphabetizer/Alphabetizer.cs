@@ -7,7 +7,7 @@ namespace MessagePipelineAlphabetizer
 {
     internal class Alphabetizer : Consumer
     {
-        private readonly IList<string> list = new List<string>();
+        private readonly List<string> list = new List<string>();
         private readonly Producer producer;
 
         public Alphabetizer(string inputChannelName, string outputChannelName) : base(inputChannelName)
@@ -21,6 +21,7 @@ namespace MessagePipelineAlphabetizer
             if (type == "MT_COMPLETE")
             {
                 SendSortedIndex();
+                producer.End();
                 hostControl.Stop();
                 return false;
             }
@@ -32,7 +33,8 @@ namespace MessagePipelineAlphabetizer
 
         private void SendSortedIndex()
         {
-            foreach (string line in list)
+            list.Sort();
+            foreach (var line in list)
             {
                 producer.Send(line);
                 Console.WriteLine(line);
