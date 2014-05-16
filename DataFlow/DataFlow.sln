@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Batch-Sequence", "Batch-Seq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicPipeline", "Pipelines\Basic\BasicPipeline\BasicPipeline.csproj", "{74526B9E-33E6-4491-9DB2-311173EB8BCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQPipeline", "Pipelines\Basic\LINQPipeline\LINQPipeline.csproj", "{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 		{74526B9E-33E6-4491-9DB2-311173EB8BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74526B9E-33E6-4491-9DB2-311173EB8BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74526B9E-33E6-4491-9DB2-311173EB8BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{74526B9E-33E6-4491-9DB2-311173EB8BCA} = {A4782F2A-17A6-4D65-A826-7AAC199E72E6}
+		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65} = {A4782F2A-17A6-4D65-A826-7AAC199E72E6}
 	EndGlobalSection
 EndGlobal

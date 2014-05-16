@@ -46,6 +46,7 @@
     <Compile Include="Framework\IAmADataSource.cs" />
     <Compile Include="Framework\IAmAFilter.cs" />
     <Compile Include="Framework\Pipeline.cs" />
+    <Compile Include="NoiseRemoval.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,6 +54,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\noise.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="data\TestData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
