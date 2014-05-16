@@ -11,6 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQPipeline", "Pipelines\B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxPipeline", "Pipelines\Basic\RxPipeline\RxPipeline.csproj", "{2DBDA14D-796D-406E-A778-0111B6372F60}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessagingPipelines", "MessagingPipelines", "{F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingPipelinePump", "Pipelines\Distributed\MessagingPipelinePump\MessagingPipelinePump.csproj", "{7C9C83ED-444A-4F3A-A201-6D96747390E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePipelines", "Pipelines\Distributed\MessagePipelines\MessagePipelines.csproj", "{1F781CB8-298B-4D74-A974-B29CA1163E74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePipelineCircularShifter", "Pipelines\Distributed\MessagePipelineCircularShifter\MessagePipelineCircularShifter.csproj", "{12109AEF-A783-4151-8405-4540FB4F8873}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +37,18 @@ Global
 		{2DBDA14D-796D-406E-A778-0111B6372F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DBDA14D-796D-406E-A778-0111B6372F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DBDA14D-796D-406E-A778-0111B6372F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9C83ED-444A-4F3A-A201-6D96747390E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9C83ED-444A-4F3A-A201-6D96747390E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9C83ED-444A-4F3A-A201-6D96747390E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9C83ED-444A-4F3A-A201-6D96747390E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F781CB8-298B-4D74-A974-B29CA1163E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F781CB8-298B-4D74-A974-B29CA1163E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F781CB8-298B-4D74-A974-B29CA1163E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F781CB8-298B-4D74-A974-B29CA1163E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12109AEF-A783-4151-8405-4540FB4F8873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12109AEF-A783-4151-8405-4540FB4F8873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12109AEF-A783-4151-8405-4540FB4F8873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12109AEF-A783-4151-8405-4540FB4F8873}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +56,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{74526B9E-33E6-4491-9DB2-311173EB8BCA} = {A4782F2A-17A6-4D65-A826-7AAC199E72E6}
 		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65} = {A4782F2A-17A6-4D65-A826-7AAC199E72E6}
+		{2DBDA14D-796D-406E-A778-0111B6372F60} = {A4782F2A-17A6-4D65-A826-7AAC199E72E6}
+		{7C9C83ED-444A-4F3A-A201-6D96747390E3} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
+		{1F781CB8-298B-4D74-A974-B29CA1163E74} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
+		{12109AEF-A783-4151-8405-4540FB4F8873} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
 	EndGlobalSection
 EndGlobal
