@@ -19,6 +19,7 @@ namespace MessagePipelineCircularShifter
             var type = message.Label;
             if (type == "MT_COMPLETE")
             {
+                producer.End();
                 hostControl.Stop();
                 return false;
             }

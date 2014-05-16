@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePipelines", "Pipelin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePipelineCircularShifter", "Pipelines\Distributed\MessagePipelineCircularShifter\MessagePipelineCircularShifter.csproj", "{12109AEF-A783-4151-8405-4540FB4F8873}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePipelineAlphabetizer", "Pipelines\Distributed\MessagePipelineAlphabetizer\MessagePipelineAlphabetizer.csproj", "{11091AB6-34CB-4450-B79C-B5BF743681C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePipelineSink", "Pipelines\Distributed\MessagePipelineSink\MessagePipelineSink.csproj", "{335A03D8-169F-4F51-A7B2-8A7EB782AA4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,14 @@ Global
 		{12109AEF-A783-4151-8405-4540FB4F8873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12109AEF-A783-4151-8405-4540FB4F8873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12109AEF-A783-4151-8405-4540FB4F8873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11091AB6-34CB-4450-B79C-B5BF743681C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11091AB6-34CB-4450-B79C-B5BF743681C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11091AB6-34CB-4450-B79C-B5BF743681C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11091AB6-34CB-4450-B79C-B5BF743681C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335A03D8-169F-4F51-A7B2-8A7EB782AA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335A03D8-169F-4F51-A7B2-8A7EB782AA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335A03D8-169F-4F51-A7B2-8A7EB782AA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335A03D8-169F-4F51-A7B2-8A7EB782AA4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +72,7 @@ Global
 		{7C9C83ED-444A-4F3A-A201-6D96747390E3} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
 		{1F781CB8-298B-4D74-A974-B29CA1163E74} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
 		{12109AEF-A783-4151-8405-4540FB4F8873} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
+		{11091AB6-34CB-4450-B79C-B5BF743681C6} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
+		{335A03D8-169F-4F51-A7B2-8A7EB782AA4F} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
 	EndGlobalSection
 EndGlobal
