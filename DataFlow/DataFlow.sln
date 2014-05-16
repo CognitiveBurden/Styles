@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicPipeline", "Pipelines\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQPipeline", "Pipelines\Basic\LINQPipeline\LINQPipeline.csproj", "{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxPipeline", "Pipelines\Basic\RxPipeline\RxPipeline.csproj", "{2DBDA14D-796D-406E-A778-0111B6372F60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FAE9C78-FFFF-4738-A33C-C616A5ECCF65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBDA14D-796D-406E-A778-0111B6372F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBDA14D-796D-406E-A778-0111B6372F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBDA14D-796D-406E-A778-0111B6372F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBDA14D-796D-406E-A778-0111B6372F60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
