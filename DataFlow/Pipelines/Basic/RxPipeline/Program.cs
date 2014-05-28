@@ -8,8 +8,10 @@ namespace RxPipeline
     {
         static void Main(string[] args)
         {
-            var observable = new StreamReader(@"data\TestData.txt").ToObservableLines(new FileSystemWatcher(@"data\TestData.txt").Watch(WatcherChangeTypes.Changed));
+            string fileName = @"data\TestData.txt";
+            var observable = new StreamReader(fileName).ToObservableLines(Observable.Return(true));
             observable.ToEnumerable().Each(line => Console.WriteLine(line));
+
 
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
