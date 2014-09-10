@@ -24,7 +24,9 @@ namespace BasicPipeline
             shifter.Successor = alphabetizer;
             
             var pipeline = new Pipeline<string>(pump: pump, sink: new ConsoleWriter());
+            Console.WriteLine("Begin Execution At:{0}", DateTime.UtcNow);
             pipeline.Execute();
+            Console.WriteLine("Stop Execution At:{0}", DateTime.UtcNow);
 
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();

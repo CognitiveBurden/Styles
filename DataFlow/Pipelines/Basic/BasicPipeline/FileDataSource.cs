@@ -7,7 +7,7 @@ namespace BasicPipeline
 {
     public class FileDataSource : IAmADataSource<string>
     {
-        private StreamReader source;
+        private readonly StreamReader source;
 
         public FileDataSource(StreamReader source)
         {
