@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipelines", "Pipelines", "{A4782F2A-17A6-4D65-A826-7AAC199E72E6}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePipelineSink", "Pipelines\Distributed\MessagePipelineSink\MessagePipelineSink.csproj", "{335A03D8-169F-4F51-A7B2-8A7EB782AA4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelPipeline", "Pipelines\Basic\ParallelPipeline\ParallelPipeline.csproj", "{358FAB2A-8DC9-47CB-955C-86BC6A40A0A7}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpPipeline", "FSharpPipeline\FSharpPipeline.fsproj", "{B4AD795B-8878-4D07-817D-66B28D41CED5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{358FAB2A-8DC9-47CB-955C-86BC6A40A0A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{358FAB2A-8DC9-47CB-955C-86BC6A40A0A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{358FAB2A-8DC9-47CB-955C-86BC6A40A0A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4AD795B-8878-4D07-817D-66B28D41CED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4AD795B-8878-4D07-817D-66B28D41CED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4AD795B-8878-4D07-817D-66B28D41CED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4AD795B-8878-4D07-817D-66B28D41CED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,5 +89,6 @@ Global
 		{11091AB6-34CB-4450-B79C-B5BF743681C6} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
 		{335A03D8-169F-4F51-A7B2-8A7EB782AA4F} = {F1A90F40-9C7B-43DA-8A7F-18B1618FF3AB}
 		{358FAB2A-8DC9-47CB-955C-86BC6A40A0A7} = {A4782F2A-17A6-4D65-A826-7AAC199E72E6}
+		{B4AD795B-8878-4D07-817D-66B28D41CED5} = {A4782F2A-17A6-4D65-A826-7AAC199E72E6}
 	EndGlobalSection
 EndGlobal
