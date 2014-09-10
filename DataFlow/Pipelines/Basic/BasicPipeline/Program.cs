@@ -19,7 +19,8 @@ namespace BasicPipeline
 
             #endregion
 
-            pump.Successor = shifter;
+            pump.Successor = noiseRemover;
+            noiseRemover.Successor = shifter;
             shifter.Successor = alphabetizer;
             
             var pipeline = new Pipeline<string>(pump: pump, sink: new ConsoleWriter());
