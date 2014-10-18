@@ -14,13 +14,14 @@ namespace BasicPipeline
 
             #region Modifying the requirement - add a 'noise' list to remove words from the index
 
-            var noiseWords = new FileDataSource(new StreamReader(@"data\noise.txt")).Begin();
-            var noiseRemover = new NoiseRemoval(noiseWords);
+            //var noiseWords = new FileDataSource(new StreamReader(@"data\noise.txt")).Begin();
+            //var noiseRemover = new NoiseRemoval(noiseWords);
+            //pump.Successor = noiseRemover;
+            //noiseRemover.Successor = shifter;
 
             #endregion
 
-            pump.Successor = noiseRemover;
-            noiseRemover.Successor = shifter;
+            pump.Successor = shifter;
             shifter.Successor = alphabetizer;
             
             var pipeline = new Pipeline<string>(pump: pump, sink: new ConsoleWriter());

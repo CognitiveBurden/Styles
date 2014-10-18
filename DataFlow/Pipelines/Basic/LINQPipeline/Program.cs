@@ -10,6 +10,9 @@ namespace LINQPipeline
         {
             PipelineGenerator.FromFile(new StreamReader((@"data\TestData.txt")))
                 .CircularShift()
+            #region Modify to add a new requirement
+                /*.RemoveNoise(PipelineGenerator.FromFile(new StreamReader(@"data\noise.txt")))*/
+            #endregion
                 .OrderBy(line => line)
                 .Each(Console.WriteLine);
                 
